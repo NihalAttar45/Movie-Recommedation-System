@@ -1,0 +1,128 @@
+/* General Styles */
+body {
+	 background-image: url("images/login.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container, .box {
+   /* background: #ffffff;*/
+    background: rgba(255, 255, 255, 0.5);
+    padding: 25px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);*/
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+   /* color: #1976D2;*/
+    color:#dc3545;
+    margin-bottom: 20px;
+}
+
+/* Form Controls */
+.form-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    /*background-color: #1976D2;*/
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    margin-top:10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #135ba1;
+}
+
+.signup-link {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: #dc3545;
+    text-decoration: none;
+      border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-link:hover {
+   
+    background-color: #135ba1;
+}
+
+/* Messages */
+.message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.error {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container, .box {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

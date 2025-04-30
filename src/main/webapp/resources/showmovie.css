@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #1976D2;
+    font-size: 2em;
+}
+
+
+/* Search bar styles */
+.search-container {
+    margin: 20px auto; /* Same margin as the table */
+    text-align: center;
+    width: 100%; /* Ensures the search bar is centered and responsive */
+}
+
+.search-container input[type="text"] {
+    width: 96%; /* Matches the table width, considering padding */
+    padding: 10px 8px; /* Same padding as table cells */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensures padding doesn't exceed container width */
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #1976D2; /* Your preferred color for focus */
+}
+
+.search-container input[type="text"]::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Responsive table container */
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    min-width: 600px; /* Ensures a minimum width to prevent breaking */
+}
+
+th, td {
+    padding: 10px 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word; /* Allows text to wrap within cells */
+}
+
+th {
+    background-color: #1976D2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        margin-top: 15px;
+    }
+
+    th, td {
+        padding: 8px 6px;
+        font-size: 0.9em;
+    }
+
+    .search-container input[type="text"] {
+        width: 94%; /* Slightly adjusted for smaller screens */
+        padding: 8px 6px; /* Matches the table cell padding */
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+        margin-top: 10px;
+    }
+
+    th, td {
+        padding: 6px 4px;
+        font-size: 0.8em;
+    }
+
+    .search-container input[type="text"] {
+        width: 92%; /* Further adjusted for smaller screens */
+        padding: 6px 4px; /* Matches the table cell padding */
+        font-size: 12px;
+    }
+}

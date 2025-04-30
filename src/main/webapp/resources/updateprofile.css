@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+  /*background: linear-gradient(135deg, #ff4b2b, #ff416c);*/
+ /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+}
+
+.container1 h1 {
+    font-size: 32px;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.message.success {
+    color: green;
+}
+
+.message.error {
+    color: red;
+}
